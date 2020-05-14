@@ -3,4 +3,4 @@
 require_relative "../lib/ethical_activewear/scraper.rb"
 require_relative "../lib/ethical_activewear/cli.rb"
 
-EthicalActivewear::CLI.new
+EthicalActivewear::CLI.new.call

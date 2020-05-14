@@ -2,6 +2,8 @@ require_relative "ethical_activewear.rb"
 
 class EthicalActivewear::CLI
   
-  puts "hello"
+ def call 
+   puts "hello"
+ end
   
 end
