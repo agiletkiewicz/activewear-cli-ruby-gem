@@ -36,14 +36,17 @@ class EthicalActivewear::CLI
    formatted_description = brand.description.split(/(See the rating)/)
    formatted_shipping = brand.shipping.split("–")
    puts ""
-   puts "----------------------Brand:---------------------".light_blue
+   puts "----------------------Brand---------------------".light_blue
+   puts ''
    puts "Name: #{brand.name}"
    puts brand.rating
    puts "" 
-   puts "------------------Description:------------------".light_blue
+   puts "------------------Description------------------".light_blue
+   puts ''
    puts formatted_description[0] 
    puts ""
-   puts "----------------------Shop:----------------------".light_blue
+   puts "----------------------Shop----------------------".light_blue
+   puts ''
    puts formatted_shipping[1].strip
    puts "Website: #{brand.url}"
    puts ""
