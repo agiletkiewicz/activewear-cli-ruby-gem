@@ -1,6 +1,6 @@
 require_relative "ethical_activewear.rb"
 
-class Scraper
+class EthicalActivewear::Scraper
 
    def get_page
       Nokogiri::HTML(open("https://goodonyou.eco/ultimate-guide-ethical-activewear/"))
@@ -16,4 +16,3 @@ class Scraper
 
 
 end
-
