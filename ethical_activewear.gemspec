@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["'Agi Letkiewicz'"]
   spec.email         = ["'a.letkiewicz@gmail.com'"]
 
-  spec.summary       = "Find an activewear brand"
+  spec.summary       = "This Ruby Gem provides a CLI to view the best sustainable and ethical activewear brands as per the Good On You website."
   spec.description   = 
   spec.homepage      = "http://anything.com"
   spec.license       = "MIT"

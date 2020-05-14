@@ -1,6 +1,6 @@
 # EthicalActivewear
 
-Find ethical activewear brands to shop! 
+This Ruby Gem provides a CLI to view the best sustainable and ethical activewear brands as per the Good On You website.
 
 ## Installation
 
@@ -20,7 +20,9 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Type the below and follow the on screen prompts.
+
+    $ ./bin/ethical_activewear
 
 ## Development
 
