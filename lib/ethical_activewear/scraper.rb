@@ -1,6 +1,4 @@
-require 'open-uri'
-require 'nokogiri'
-require 'pry'
+require_relative "ethical_activewear.rb"
 
 class Scraper
 

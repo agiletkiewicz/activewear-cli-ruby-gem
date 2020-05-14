@@ -1,4 +1,4 @@
-
+require_relative "ethical_activewear.rb"
 
 class Brand 
   
