@@ -1,4 +1,4 @@
-require "ethical_activewear/version"
+require_relative "version.rb"
 
 module EthicalActivewear
   class Error < StandardError; end
