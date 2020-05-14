@@ -5,33 +5,38 @@ class EthicalActivewear::CLI
  def call 
    puts "Welcome to your shop of ethically made activewear!"
    puts "These are the top ethically-made activewear brands of 2020"
-   puts "Which brand would you like to learn more about?"
    puts ""
-   puts "Enter a number or exit"
    
    EthicalActivewear::Scraper.new.scrape_page
+   list_brands 
+   
+   puts "" 
+   puts "Enter the number of a brand to learn more!"
    
    start
 
  end
  
  def start 
-   "Enter a number or exit."
-   list_brands
    user_input = gets.strip
-   if user_input == 'exit'
-     puts "Thanks!"
+   if user_input.downcase == 'exit'
+     puts "See you next time!"
      exit 
    elsif user_input.to_i.between?(1,17)
      index = input_to_index(user_input)
      print_brand(index)
+     puts "Enter another number, 'list' to see the list again, or 'exit'"
+     start
+  elsif user_input.downcase == 'list'
+     list_brands
+     puts "" 
+     puts "Enter the number of a brand to learn more! Or exit."
      start
    else 
-     puts "Sorry, don't understand"
+     puts "Sorry, I don't understand. Enter the number of a brand, 'list' to see the list again, or exit."
      start
     end
  end
- 
  
  
  def list_brands
