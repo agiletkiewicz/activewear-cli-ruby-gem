@@ -9,7 +9,7 @@ class Scraper
    end
   
   
-   def self.scrape_page
+   def scrape_page
     get_page.css("div.article__block .layout-block").each do |brand|
       Brand.new.create_from_page(brand)
     end
