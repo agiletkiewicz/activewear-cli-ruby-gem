@@ -9,7 +9,7 @@ class EthicalActivewear::Scraper
   
    def scrape_page
     get_page.css("div.article__block .layout-block").each do |brand|
-       EthicalActivewear::Brand.new.create_from_page(brand)
+       EthicalActivewear::Brand.create_from_page(brand)
     end
   end
 

@@ -6,4 +6,4 @@ require_relative "../lib/ethical_activewear/brand.rb"
 
 EthicalActivewear::CLI.new.call
 
-EthicalActivewear::Brand.all
+puts EthicalActivewear::Brand.all
