@@ -33,8 +33,6 @@ class EthicalActivewear::CLI
  
  def print_brand(index)
    brand = EthicalActivewear::Brand.all[index]
-  # formatted_description = brand.description.split(/(See the rating)/)
-  # formatted_shipping = brand.shipping.split("–")
    puts ""
    puts "----------------------Brand---------------------".light_blue
    puts ''
@@ -66,7 +64,7 @@ class EthicalActivewear::CLI
   elsif user_input.downcase == 'list'
      list_brands
      puts "" 
-     puts "Enter the number of a brand to learn more! Or exit.".yellow
+     puts "Enter the number of a brand to learn more, or exit.".yellow
      start
    else 
      puts "Sorry, I don't understand.".red 
