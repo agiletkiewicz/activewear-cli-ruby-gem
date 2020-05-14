@@ -33,8 +33,8 @@ class EthicalActivewear::CLI
  
  def print_brand(index)
    brand = EthicalActivewear::Brand.all[index]
-   formatted_description = brand.description.split(/(See the rating)/)
-   formatted_shipping = brand.shipping.split("–")
+  # formatted_description = brand.description.split(/(See the rating)/)
+  # formatted_shipping = brand.shipping.split("–")
    puts ""
    puts "----------------------Brand---------------------".light_blue
    puts ''
@@ -43,11 +43,11 @@ class EthicalActivewear::CLI
    puts "" 
    puts "------------------Description------------------".light_blue
    puts ''
-   puts formatted_description[0] 
+   puts brand.description
    puts ""
    puts "----------------------Shop----------------------".light_blue
    puts ''
-   puts formatted_shipping[1].strip
+   puts brand.shipping
    puts "Website: #{brand.url}"
    puts ""
  end
