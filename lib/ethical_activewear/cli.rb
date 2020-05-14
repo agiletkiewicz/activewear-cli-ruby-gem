@@ -10,15 +10,32 @@ class EthicalActivewear::CLI
    
    EthicalActivewear::Scraper.new.scrape_page
    
-   EthicalActivewear::Brand.all.each.with_index(1) do |brand, index|
-     puts "#{index}. #{brand.name}"
-   end
-
-  # list brands
-  # get user input 
+   list_brands
+  
+  index = input_to_index(gets)
+  
+  print_brand(index)
+  
+  # print brand detail
+  # present new option
   
  end
  
+ def list_brands
+   EthicalActivewear::Brand.all.each.with_index(1) do |brand, index|
+       puts "#{index}. #{brand.name}"
+   end
+ end
+ 
+ def input_to_index(input)
+   index = input.to_i - 1 
+   index
+ end
+ 
+ def print_brand(index)
+   brand = EthicalActivewear::Brand.all[index]
+   puts brand.name
+ end
  
   
 end
