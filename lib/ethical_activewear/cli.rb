@@ -56,7 +56,7 @@ class EthicalActivewear::CLI
    if user_input.downcase == 'exit'
      puts "See you next time!".yellow
      exit 
-   elsif user_input.to_i.between?(1,17)
+   elsif valid_number?(user_input)
      index = input_to_index(user_input)
      print_brand(index)
      puts "Enter another number, 'list' to see the list again, or 'exit'".yellow
@@ -71,6 +71,10 @@ class EthicalActivewear::CLI
      puts "Enter the number of a brand, 'list' to see the list again, or exit.".yellow
      start
     end
+ end
+ 
+ def valid_number?(input)
+   input.to_i.between?(1,EthicalActivewear::Brand.all.length)
  end
  
  
