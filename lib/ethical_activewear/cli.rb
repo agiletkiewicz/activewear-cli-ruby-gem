@@ -2,6 +2,7 @@ require_relative "ethical_activewear.rb"
 
 class EthicalActivewear::CLI
   
+  
  def call 
    puts ""
    puts "Welcome to your shop of ethically made activewear!".yellow
@@ -19,17 +20,12 @@ class EthicalActivewear::CLI
  end
 
  
- 
  def list_brands
    EthicalActivewear::Brand.all.each.with_index(1) do |brand, index|
        puts "#{index}. #{brand.name}"
    end
  end
  
- def input_to_index(input)
-   index = input.to_i - 1 
-   index
- end
  
  def print_brand(index)
    brand = EthicalActivewear::Brand.all[index]
@@ -73,8 +69,18 @@ class EthicalActivewear::CLI
     end
  end
  
+ 
+ #HELPER METHODS:
+ 
+ 
  def valid_number?(input)
    input.to_i.between?(1,EthicalActivewear::Brand.all.length)
+ end
+ 
+ 
+  def input_to_index(input)
+   index = input.to_i - 1 
+   index
  end
  
  

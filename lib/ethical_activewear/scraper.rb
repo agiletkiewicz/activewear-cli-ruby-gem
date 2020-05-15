@@ -7,7 +7,6 @@ class EthicalActivewear::Scraper
    end
   
 
-  
    def scrape_page
      get_page.css("div.article__block .layout-block").each do |brand|
        attribute_hash = {}
