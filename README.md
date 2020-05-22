@@ -2,6 +2,8 @@
 
 This Ruby Gem provides a CLI to view the best sustainable and ethical activewear brands of 2020 as per the Good On You website.
 
+During this time of COVID, many people are wearing more lounge and activewear! This app give you an opportunity to learn more about brands that make these products in an ethical and sustainable way, so that your purchase does good.
+
 ## Installation
 
 
