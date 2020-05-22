@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["'Agi Letkiewicz'"]
   spec.email         = ["'a.letkiewicz@gmail.com'"]
 
-  spec.summary       = "This Ruby Gem provides a CLI to view the best sustainable and ethical activewear brands as per the Good On You website."
-  spec.description   = 
+  spec.summary       = "This Ruby Gem provides a CLI to view the best sustainable and ethical activewear brands of 2020, per the Good On You website."
+  spec.description   = "During this time of COVID, many people are wearing more lounge and activewear! This is an application to learn about brands that make these products in an ethical and sustainable way, so that your purchase does good."
   spec.homepage      = "http://anything.com"
   spec.license       = "MIT"
 
